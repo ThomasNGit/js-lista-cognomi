@@ -29,11 +29,21 @@ console.log("La lista dopo l'inserimento del cognome utente è: ", listacognomi)
 //sistemo la lista in ordine alfabetico
 cognomiordinati = listacognomi.sort();
 
-console.log(cognomiordinati);
+ console.log(cognomiordinati);
 
 
 //stampo la lista in ordine alfabetico
-document.getElementById("cognomi").innerHTML = "I cognomi in ordine alfabetico sono: " + cognomiordinati;
+i = 0;
+
+var cognomePrima
+
+while (i < cognomiordinati.length){
+    
+    cognomePrima = document.getElementById("cognomi").innerHTML;
+
+    document.getElementById("cognomi").innerHTML = cognomePrima + "<li>" + cognomiordinati[i] + "</li>";
+    i++;
+}
 
 
 //scrivo in pagina la posizione del cognome dell'utente nella lista
