@@ -19,7 +19,7 @@ console.log("Il cognome dell'utente è: ", cognomeuser);
 //inserisco il cognome dell'utente con un push nella lista dei cognomi
 listacognomi.push(cognomeuser);
 
-console.log("La lista dopo l'inserimento del cognome utente è:", listacognomi);
+console.log("La lista dopo l'inserimento del cognome utente è: ", listacognomi);
 
 
 
@@ -34,3 +34,4 @@ document.getElementById("cognomi").innerHTML = "I cognomi in ordine alfabetico s
 
 
 //scrivo in pagina la posizione del cognome dell'utente nella lista
+document.getElementById("posizione").innerHTML = "Il tuo cognome è alla posizione numero: " + (cognomiordinati.indexOf(cognomeuser) + 1) + ".";
