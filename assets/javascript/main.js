@@ -4,14 +4,17 @@
 //Scrivi anche la posizione della lista in cui il nuovo utente si trova
 
 
+// dichiarazioni delle variabili
+var listacognomi, cognomeuser, cognomiordinati
+
 //creo array con una lista di cognomi
-var listacognomi = ["rossi", "bianchi", "pinco", "pallino", "zeta", "grieco"]
+listacognomi = ["rossi", "bianchi", "pinco", "pallino", "zeta", "grieco"]
 
 console.log(listacognomi);
 
 
 //Chiedo il cognome all'utente con un prompt
-var cognomeuser = prompt("Ciao, come ti chiami?")
+cognomeuser = prompt("Ciao, come ti chiami?")
 
 console.log("Il cognome dell'utente è: ", cognomeuser);
 
@@ -24,7 +27,7 @@ console.log("La lista dopo l'inserimento del cognome utente è: ", listacognomi)
 
 
 //sistemo la lista in ordine alfabetico
-var cognomiordinati = listacognomi.sort();
+cognomiordinati = listacognomi.sort();
 
 console.log(cognomiordinati);
 
