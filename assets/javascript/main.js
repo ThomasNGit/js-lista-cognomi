@@ -10,7 +10,9 @@ var listacognomi, cognomeuser, cognomiordinati;
 //creo array con una lista di cognomi
 listacognomi = ["rossi", "bianchi", "pinco", "pallino", "zeta", "grieco"]
 
-console.log(listacognomi);
+var sliced = listacognomi.slice(0, 6);
+
+console.log(sliced);
 
 var j = 0;
 
