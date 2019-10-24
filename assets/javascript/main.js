@@ -5,13 +5,24 @@
 
 
 // dichiarazioni delle variabili
-var listacognomi, cognomeuser, cognomiordinati
+var listacognomi, cognomeuser, cognomiordinati;
 
 //creo array con una lista di cognomi
 listacognomi = ["rossi", "bianchi", "pinco", "pallino", "zeta", "grieco"]
 
 console.log(listacognomi);
 
+var j = 0;
+
+var cognomePrima2
+
+while (j < listacognomi.length){
+
+    cognomePrima2 = document.getElementById("cognomiprima").innerHTML;
+
+    document.getElementById("cognomiprima").innerHTML = cognomePrima2 + "<li>" + listacognomi[j] + "</li>"
+    j++;
+}
 
 //Chiedo il cognome all'utente con un prompt
 cognomeuser = prompt("Ciao, come ti chiami?")
