@@ -45,6 +45,9 @@ while (i < cognomiordinati.length){
     i++;
 }
 
+//scrivo in pagina la posizione del cognome dell'utente secondo la macchina
+document.getElementById("posizionepc").innerHTML = "Il tuo cognome secondo il pc è alla posizione numero: " + cognomiordinati.indexOf(cognomeuser) + ".";
+
 
 //scrivo in pagina la posizione del cognome dell'utente nella lista
-document.getElementById("posizione").innerHTML = "Il tuo cognome è alla posizione numero: " + (cognomiordinati.indexOf(cognomeuser) + 1) + ".";
+document.getElementById("posizione").innerHTML = "Il tuo cognome per una persona normale è alla posizione numero: " + (cognomiordinati.indexOf(cognomeuser) + 1) + ".";
